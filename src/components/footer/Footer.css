@@ -3,9 +3,10 @@
   background: #f6f8fc;
 }
 
-.reasons h2 {
-  font-size: 24px;
+.reasons > h2 {
+  font-size: 34px;
   margin-bottom: 40px;
+  font-weight: normal;
 }
 
 /* GRID */

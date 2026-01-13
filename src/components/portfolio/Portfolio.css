@@ -1,9 +1,8 @@
 .portfolio {
-  padding: 80px 80px;
+  padding: 80px 190px;
   background: #fff;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -22,8 +21,8 @@
 .track {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  width: 90%;
+  gap: 24px;
+  width: 100%;
 }
 
 /* CARD */
@@ -53,7 +52,7 @@
   background: transparent;
   color: #3b82f6;
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -73,8 +72,8 @@
 /* ARROWS */
 .arrow {
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   background: #eff6ff;
   border: none;
   border-radius: 6px;
@@ -84,11 +83,11 @@
 }
 
 .arrow.left {
-  left: -50px;
+  left: -80px;
 }
 
 .arrow.right {
-  right: -50px;
+  right: -80px;
 }
 
 /* MOBILE */

@@ -10,7 +10,7 @@
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 80px;
 }
 
 .left, .right {
@@ -24,7 +24,9 @@ h2 {
 
 .subtitle {
   color: #6b7280;
-  margin-bottom: 40px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  font-size: large;
 }
 
 .item {
@@ -54,9 +56,10 @@ h2 {
   background: #2563eb;
   color: #fff;
   border: none;
-  padding: 10px 22px;
+  padding: 14px 26px;
   border-radius: 8px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .btn:hover {
@@ -64,10 +67,8 @@ h2 {
 }
 
 .zoom-logo {
-  font-size: 72px;
-  font-weight: 800;
-  color: #2563eb;
-  margin-bottom: 40px;
+  height: 120px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {

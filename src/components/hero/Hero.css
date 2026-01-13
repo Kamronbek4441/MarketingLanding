@@ -35,36 +35,45 @@
 }
 
 .hero-title {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .hero-description {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 
 .hero-stats {
-  font-size: 16px;
+  font-size: 22px;
   margin-bottom: 30px;
+}
+
+.hero > img {
+  width: 18px;
+}
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .hero-buttons {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  /* flex-direction: column; */
+  gap: 30px;
 }
 
 .hero-button-primary {
   background: linear-gradient(90deg, #2d6dfc, #1a4ed6);
   border: none;
-  padding: 15px 30px;
+  padding: 15px 46px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
@@ -73,6 +82,6 @@
 }
 
 .hero-button-text {
-  font-size: 14px;
+  font-size: 18px;
   max-width: 400px;
 }

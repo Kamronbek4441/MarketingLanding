@@ -1,8 +1,8 @@
 import React from "react";
-import "./Hero.css"
+import "./Hero.css";
 
 const Hero = () => {
-  const heroBg = "/assets/buildings.jpg"; 
+  const heroBg = "/assets/buildings.jpg";
 
   return (
     <section
@@ -40,15 +40,18 @@ const Hero = () => {
         >
           <p className="hero-subtitle">МАРКЕТИНГ И АУТСОРСИНГ</p>
           <h1 className="hero-title">
-            Привлечение клиентов <br /> на покупку недвижимости
+            Привлечение клиентов на покупку недвижимости
           </h1>
           <p className="hero-description">
             для застройщиков | строительных компаний | агентств
           </p>
-          <p className="hero-stats">
-            от 500 новых заявок и звонков в месяц <br />
-            наш средний результат в нише
-          </p>
+          <div className="hero">
+            <img src="/assets/arrow.png" alt="" />
+            <p className="hero-stats">
+              от 500 новых заявок и звонков в месяц <br />
+              наш средний результат в нише
+            </p>
+          </div>
           <div className="hero-buttons">
             <button className="hero-button-primary">ПОЛУЧИТЬ ПЛАН</button>
             <span className="hero-button-text">
@@ -63,7 +66,6 @@ const Hero = () => {
 };
 
 export default Hero;
-
 
 // import React from 'react'
 // import "./Hero.css"

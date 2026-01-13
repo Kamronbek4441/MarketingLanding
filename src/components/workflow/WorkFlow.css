@@ -12,10 +12,19 @@
 
 /* TITLE */
 .workflow-title {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 600;
   color: #2b2b2b;
   margin-bottom: 50px;
+}
+
+.workflow-top {
+  gap: 10px;
+  margin-left: 40px;
+}
+
+.d3 {
+ margin-left: 80px;
 }
 
 /* TOP TEXT */
@@ -23,10 +32,15 @@
 .workflow-bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  /* gap: 40px; */
   font-size: 14px;
   line-height: 1.6;
   color: #2b2b2b;
+}
+
+.workflow-bottom {
+  margin-left: 220px;
+  gap: 40px;
 }
 
 .workflow-top {
@@ -40,8 +54,9 @@
 }
 
 .workflow-image img {
-  width: 100%;
-  display: block;
+  width: 1580px;
+  margin-left: -210px;
+  /* display: block; */
 }
 
 /* RESPONSIVE */

@@ -5,9 +5,9 @@
 .case-box {
   max-width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(90deg, #3761fc 0%, #8dc6fd 100%);
+  background: linear-gradient(90deg, #3761fc 0%, #81bdf6 100%);
   border-radius: 14px;
-  padding: 40px;
+  padding: 40px 60px  ;
   color: #fff;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .case-title {
-  font-size: 20px;
+  font-size: 34px;
   font-weight: 600;
 }
 
@@ -43,6 +43,7 @@
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr;
   gap: 40px;
+
 }
 
 /* LEFT */
@@ -52,25 +53,26 @@
 }
 
 .case-left .big {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .white-btn {
   margin-top: 20px;
   background: #fff;
-  color: #1b43d6;
+  color: black;
   border: none;
-  padding: 12px 24px;
+  padding: 18px 30px;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: lighter;
   cursor: pointer;
 }
 
 /* MIDDLE */
 .case-middle h4,
 .case-right h4 {
-  margin-bottom: 18px;
-  font-size: 16px;
+  margin-bottom: 48px;
+  font-size: 26px;
+  font-weight: lighter;
 }
 
 .case-middle ul {
@@ -81,6 +83,7 @@
 .case-middle li {
   margin-bottom: 16px;
   line-height: 1.4;
+  font-size: large;
 }
 
 /* RIGHT */
@@ -88,7 +91,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
-  font-size: 14px;
+  font-size: 18px;
+  gap: 20px;
 }
 
 /* MOBILE */
