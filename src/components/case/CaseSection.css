@@ -1,0 +1,99 @@
+.case-section {
+  padding: 60px 20px;
+}
+
+.case-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #3761fc 0%, #8dc6fd 100%);
+  border-radius: 14px;
+  padding: 40px;
+  color: #fff;
+}
+
+/* HEADER */
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.case-header > img {
+  height: 70px;
+}
+
+.case-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.case-logo {
+  height: 28px;
+}
+
+/* HR */
+.case-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 20px 0 40px;
+}
+
+/* CONTENT */
+.case-content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 40px;
+}
+
+/* LEFT */
+.case-left p {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.case-left .big {
+  font-size: 18px;
+}
+
+.white-btn {
+  margin-top: 20px;
+  background: #fff;
+  color: #1b43d6;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MIDDLE */
+.case-middle h4,
+.case-right h4 {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.case-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.case-middle li {
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+/* RIGHT */
+.stats div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .case-content {
+    grid-template-columns: 1fr;
+  }
+}

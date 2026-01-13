@@ -1,0 +1,58 @@
+.workflow {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.workflow-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* TITLE */
+.workflow-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2b2b2b;
+  margin-bottom: 50px;
+}
+
+/* TOP TEXT */
+.workflow-top,
+.workflow-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2b2b2b;
+}
+
+.workflow-top {
+  margin-bottom: 30px;
+}
+
+/* IMAGE */
+.workflow-image {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.workflow-image img {
+  width: 100%;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .workflow-top,
+  .workflow-bottom {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .workflow-title {
+    text-align: center;
+  }
+}

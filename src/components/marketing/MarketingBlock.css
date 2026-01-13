@@ -1,0 +1,48 @@
+.marketing-block {
+  width: 100%;
+  background: #F2F9FF;
+  /* padding: 20px 0 20px; */
+}
+
+.marketing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* TEXT */
+.marketing-text {
+  max-width: 540px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2b2b2b;
+  font-family: "Arial", sans-serif;
+}
+
+.marketing-text p {
+  margin-bottom: 16px;
+}
+
+/* IMAGE */
+.marketing-image img {
+  width: 720px;
+  max-width: 100%;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .marketing-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .marketing-image img {
+    width: 300px;
+  }
+}

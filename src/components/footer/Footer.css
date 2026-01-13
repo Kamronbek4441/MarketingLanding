@@ -1,0 +1,72 @@
+.reasons {
+  padding: 80px 190px;
+  background: #f6f8fc;
+}
+
+.reasons h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.reason-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  position: relative;
+  min-height: 210px;
+}
+
+/* ICON IMAGE */
+.reason-icon {
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+  margin-bottom: 14px;
+}
+
+/* TITLE */
+.reason-card h3 {
+  white-space: pre-line;
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+/* TEXT */
+.reason-card p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* BOTTOM LINE */
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: #2563eb;
+  border-radius: 0 0 10px 10px;
+}
+
+.reason-card:first-child .line {
+  height: 15px;
+  border-radius: 8px 8px 10px;
+}
+
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,15 @@
+.text-line-wrapper {
+  width: 100%;
+  background: #ffffff;
+  padding: 62px 0 32px 200px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: start;
+}
+
+.text-line {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2F3338;
+}
