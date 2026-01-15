@@ -4,7 +4,11 @@
   justify-content: center;
   flex-direction: column;
   gap: 40px;
-  padding: 40px 120px;
+  padding: 40px 40px;
+}
+
+.portfolio > h1 {
+  margin-left: 80px;
 }
 
 .over-port {

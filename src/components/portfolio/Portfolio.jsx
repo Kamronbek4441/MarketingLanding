@@ -6,6 +6,7 @@ const Portfolio = () => {
     <div className="portfolio">
       <h1>Портфолио лендингов</h1>
       <div className="over-port">
+        <img src="/assets/left.png" alt="" />
         <div className="port">
           <img className="port-menu-img" src="/assets/icon.jpg" alt="" />
           <button>на сайт</button>
@@ -30,6 +31,7 @@ const Portfolio = () => {
           <h3>Эксперты Ростова</h3>
           <img className="port-img" src="/assets/p4.png" alt="" />
         </div>
+        <img src="/assets/right.png" alt="" />
       </div>
     </div>
   );

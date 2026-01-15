@@ -48,4 +48,12 @@
 .head2 > .link1 {
   font-size: 20px;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.head2 > .link1:hover {
+  /* text-decoration: underline; */
+  color: #175CE5;
+  cursor: pointer;
+  font-size: 25px;
 }
