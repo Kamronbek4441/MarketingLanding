@@ -65,4 +65,14 @@
   background: #175CE5;
   color: white;
   border: none;
+  transition: all 0.4s ease;
+}
+
+.btntext > button:hover {
+  padding: 21px 90px;
+  font-size: 19px;
+  cursor: pointer;
+  background-color: white;
+  color: #175CE5;
+  border-radius: 5px;
 }
