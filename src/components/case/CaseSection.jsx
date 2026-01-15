@@ -3,63 +3,49 @@ import "./CaseSection.css";
 
 const CaseSection = () => {
   return (
-    <section className="case-section">
-      <div className="case-box">
-        {/* HEADER */}
-        <div className="case-header">
-          <h3 className="case-title">Наши кейсы</h3>
-          <img src="/assets/logo1.png" alt="logo" className="case-logo" />
+    <div className="casebody">
+      <div className="caseSection">
+        <div className="case1">
+          <div className="caseover">
+            <h2>Наши кейсы</h2>
+          </div>
+          <div className="caseover">
+            <img src="/assets/caselogo.png" alt="" />
+          </div>
         </div>
-
-        {/* HR */}
-        <div className="case-divider"></div>
-
-        {/* CONTENT */}
-        <div className="case-content">
-          {/* LEFT */}
-          <div className="case-left">
-            <p className="big">
-              За первый год работы <br />
-              <strong>9 584 заявки</strong>
-            </p>
-
-            <p>
-              по цене <strong>1 350 руб / шт</strong>
-            </p>
-
-            <p>
-              и <strong>+3%</strong> конверсии <br />в продажу.
-            </p>
-
-            <button className="white-btn">
-              ЧИТАЙТЕ КЕЙС ПОДРОБНЕЕ
-            </button>
+        <div className="line"></div>
+        <div className="case2">
+          <div className="case">
+            <h2>За первый год работы 9 584 заявки</h2>
+            <h2>по цене 1 350 руб / шт</h2>
+            <h2>и +3% конверсии в продажу.</h2>
+            <button>читайте кейс подробнее</button>
           </div>
-
-          {/* MIDDLE */}
-          <div className="case-middle">
-            <h4>Задачи:</h4>
-            <ul>
-              <li>Увеличить конверсию в продажу</li>
-              <li>Настроить стабильный поток заявок через интернет</li>
-              <li>Ежемесячно выполнять план по лидам</li>
-            </ul>
+          <div className="case">
+            <h3>Задачи:</h3>
+            <p>Увеличить конверсию в продажу</p>
+            <p>Настроить стабильный поток заявок через интернет</p>
+            <p>Ежемесячно выполнять план по лидам</p>
           </div>
-
-          {/* RIGHT */}
-          <div className="case-right">
-            <h4>Работа:</h4>
-            <div className="stats">
-              <div><span>Рекламный бюджет</span><b>1 480 000 руб</b></div>
-              <div><span>Визиты</span><b>43 370</b></div>
-              <div><span>Заявки и звонки</span><b>800</b></div>
-              <div><span>Продажи</span><b>40</b></div>
-              <div><span>Сумма заказов</span><b>80 000 000 руб</b></div>
-            </div>
+          <div className="case">
+            <h3>Работа:</h3>
+            <p>Рекламный бюджет</p>
+            <p>Визиты</p>
+            <p>Заявки и звонки</p>
+            <p>Продажи</p>
+            <p>Сумма заказов</p>
+          </div>
+          <div className="case5">
+            <h3></h3>
+            <p>1 480 000 руб</p>
+            <p>43 370</p>
+            <p>800</p>
+            <p>40</p>
+            <p>80 000 000 руб</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

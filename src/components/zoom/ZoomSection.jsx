@@ -3,42 +3,31 @@ import "./ZoomSection.css";
 
 const ZoomSection = () => {
   return (
-    <section className="zoom-section">
-      <div className="container">
-        {/* Left */}
-        <div className="left">
-          <h2>Хотите такой результат?</h2>
-          <p className="subtitle">Есть два варианта первого шага:</p>
-
-          <div className="item">
-            <div className="number">1</div>
-            <div className="content">
-              <p>
-                Закажите аудит маркетинга по свободной цене. Мы найдём для вас
-                точки роста и вы самостоятельно оцените работу.
-              </p>
-              <button className="btn">ЗАКАЗАТЬ АУДИТ</button>
-            </div>
-          </div>
+    <div className="zoomsection">
+      <div className="zoom">
+        <h1>Хотите такой результат?</h1>
+        <h3>Есть два варианта первого шага:</h3>
+        <div className="textnumber">
+          <img src="/assets/z1.png" alt="" />
+          <p>
+            Закажите аудит маркетинга по свободной цене. Мы найдем для вас точки
+            роста и вы самостоятельно оцените работу.
+          </p>
         </div>
-
-        {/* Right */}
-        <div className="right">
-          <div className="zoom-logo"><img src="/assets/zoom.jpg" alt="" /></div>
-
-          <div className="item">
-            <div className="number">2</div>
-            <div className="content">
-              <p>
-                Запишитесь на zoom-консультацию. Составим дорожную карту с
-                планом действий и расчётами.
-              </p>
-              <button className="btn">ЗАПИСАТЬСЯ НА ZOOM</button>
-            </div>
-          </div>
-        </div>
+        <button>заказать аудит</button>
       </div>
-    </section>
+      <div className="zoom">
+        <img src="/assets/zoom.png" alt="" />
+        <div className="textnumber">
+          <img src="/assets/z2.png" alt="" />
+          <p>
+            Запишитесь на zoom-консультацию. Составим дорожную карту с планом
+            действий и расчетами. 
+          </p>
+        </div>
+        <button>записаться на zoom</button>
+      </div>
+    </div>
   );
 };
 

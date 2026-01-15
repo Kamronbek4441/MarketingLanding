@@ -3,27 +3,22 @@ import "./MarketingBlock.css";
 
 const MarketingBlock = () => {
   return (
-    <section className="marketing-block">
-      <div className="marketing-container">
-        {/* LEFT TEXT */}
-        <div className="marketing-text">
-          <p>
-            Маркетинг для каждого бизнеса имеет свою специфику. Продажа
-            недвижимости – чрезвычайно конкурентное направление, и мы знаем,
-            как с ним работать.
-          </p>
-          <p>
-            Чтобы успешно продавать на всех этапах: как на стадии
-            строительства, так и уже сданных объектов.
-          </p>
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="marketing-image">
-          <img src="/assets/illustration.png" alt="marketing illustration" />
-        </div>
+    <div className="block">
+      <div className="marketingblock">
+      <div className="market">
+        <p>
+          Маркетинг для каждого бизнеса имеет свою специфику. Продажа
+          недвижимости - чрезвычайно конкурентное направление, и мы знаем, как с
+          ним работать. Чтобы успешно продавать на всех этапах: как на стадии
+          строительства, так и уже сданных объектов.
+        </p>
       </div>
-    </section>
+      <div className="market">
+        <img src="/assets/graph.png" alt="" />
+        <img src="/assets/girl.png" alt="" />
+      </div>
+    </div>
+    </div>
   );
 };
 

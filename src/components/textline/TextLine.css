@@ -1,15 +1,10 @@
 .text-line-wrapper {
-  width: 100%;
-  background: #ffffff;
-  padding: 62px 0 32px 200px;
   display: flex;
+  align-items: flex-start;
   /* justify-content: center; */
-  align-items: start;
+  padding: 60px 60px 50px 120px;
 }
 
 .text-line {
-  margin: 0;
-  font-size: 28px;
-  font-weight: bold;
-  color: #2F3338;
+  font-size: 30px;
 }
