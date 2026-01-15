@@ -1,4 +1,57 @@
-.reasons {
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 120px 120px;
+  gap: 40px;
+  background-color: #F5F6FC;
+}
+
+.footer > h1 {
+  color: #2F3338;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.foot {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 80px 0px 20px;
+  gap: 20px;
+  border-radius: 10px;
+  border-bottom: 8px solid #175CE5;
+  max-height: 350px;
+  min-height: 320px;
+  transition: all 0.5s ease;
+}
+
+.foot:hover {
+  border-bottom: 20px solid #175CE5;
+}
+
+.foot > h2 {
+  color: #2873C8;
+  /* font-size: large; */
+}
+
+.foot > p {
+  color: #1A2233;
+}
+
+/* .foot > .blue-line {
+  background-color: #2873C8;
+  height: 10px;
+  width: 20px;
+} */
+
+/* .reasons {
   padding: 80px 190px;
   background: #f6f8fc;
 }
@@ -8,15 +61,11 @@
   margin-bottom: 40px;
   font-weight: normal;
 }
-
-/* GRID */
 .reasons-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
-/* CARD */
 .reason-card {
   background: #fff;
   border-radius: 10px;
@@ -25,7 +74,6 @@
   min-height: 210px;
 }
 
-/* ICON IMAGE */
 .reason-icon {
   width: 82px;
   height: 82px;
@@ -33,22 +81,18 @@
   margin-bottom: 14px;
 }
 
-/* TITLE */
 .reason-card h3 {
   white-space: pre-line;
   font-size: 21px;
   margin-bottom: 10px;
   color: #2563eb;
 }
-
-/* TEXT */
 .reason-card p {
   font-size: 14px;
   color: #6b7280;
   line-height: 1.4;
 }
 
-/* BOTTOM LINE */
 .line {
   position: absolute;
   bottom: 0;
@@ -65,9 +109,9 @@
 }
 
 
-/* MOBILE */
+
 @media (max-width: 900px) {
   .reasons-grid {
     grid-template-columns: 1fr;
   }
-}
+} */

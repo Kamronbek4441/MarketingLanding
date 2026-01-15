@@ -1,47 +1,37 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
 
-const data = [
-  { title: "Maison Rouge", img: "/assets/p1.jpg" },
-  { title: "Капитал", img: "/assets/p2.jpg" },
-  { title: "Новый Сельмаш", img: "/assets/p3.jpg" },
-  { title: "Эксперты Ростова", img: "/assets/p4.jpg" },
-];
-
 const Portfolio = () => {
-  const [index, setIndex] = useState(0);
-
-  const prev = () => {
-    setIndex((prev) => (prev === 0 ? 0 : prev - 1));
-  };
-
-  const next = () => {
-    setIndex((prev) =>
-      prev === data.length - 4 ? prev : prev + 1
-    );
-  };
-
   return (
-    <section className="portfolio">
-      <h2>Портфолио лендингов</h2>
-
-      <div className="slider">
-        <button className="arrow left" onClick={prev}>‹</button>
-
-        <div className="track">
-          {data.slice(index, index + 4).map((item, i) => (
-            <div className="card" key={i}>
-              <div className="icon">≡</div>
-              <button className="link">НА САЙТ</button>
-              <p>{item.title}</p>
-              <img src={item.img} alt={item.title} />
-            </div>
-          ))}
+    <div className="portfolio">
+      <h1>Портфолио лендингов</h1>
+      <div className="over-port">
+        <div className="port">
+          <img className="port-menu-img" src="/assets/icon.jpg" alt="" />
+          <button>на сайт</button>
+          <h3>Maison Rouge</h3>
+          <img className="port-img" src="/assets/p1.png" alt="" />
         </div>
-
-        <button className="arrow right" onClick={next}>›</button>
+        <div className="port">
+          <img className="port-menu-img" src="/assets/icon.jpg" alt="" />
+          <button>на сайт</button>
+          <h3>Капитал</h3>
+          <img className="port-img" src="/assets/p2.png" alt="" />
+        </div>
+        <div className="port">
+          <img className="port-menu-img" src="/assets/icon.jpg" alt="" />
+          <button>на сайт</button>
+          <h3>Новый Сельмаш</h3>
+          <img className="port-img" src="/assets/p3.png" alt="" />
+        </div>
+        <div className="port">
+          <img className="port-menu-img" src="/assets/icon.jpg" alt="" />
+          <button>на сайт</button>
+          <h3>Эксперты Ростова</h3>
+          <img className="port-img" src="/assets/p4.png" alt="" />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
