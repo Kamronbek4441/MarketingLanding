@@ -1,73 +1,112 @@
+.workf {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+  padding: 40px 120px;
+}
+
+.workf > h1 {
+  color: #2F3338;
+}
+
 .workflow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.work {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+}
+
+.work1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 300px;
+}
+
+.work > p {
+  color: #1A2233;
+  font-size: 15px;
+}
+
+.steps-wrap {
+  position: relative;
+  width: 1200px;
+  margin: 50px auto;
+}
+
+.work3 {
+   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 250px;
+  margin-left: 300px;
+}
+
+.line.full {
+  position: absolute;
+  top: 50%;
+  left: 0;
   width: 100%;
-  background: #ffffff;
-  padding: 80px 0;
+  height: 2px;
+  background: #dbe6ff;
+  z-index: 0;
 }
 
-.workflow-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.steps {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
 
-/* TITLE */
-.workflow-title {
-  font-size: 34px;
-  font-weight: 600;
-  color: #2b2b2b;
-  margin-bottom: 50px;
+.step {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4f7cff;
 }
 
-.workflow-top {
-  gap: 10px;
-  margin-left: 40px;
+.s1 {
+  border: 1px solid #7aa7ff;
+  font-size: 20px;
+  color: #2f3338;
 }
-
-.d3 {
- margin-left: -20px;
+.s2 {
+  border: 2px solid #7aa7ff;
+  font-size: 20px;
+  color: #2f3338;
 }
-
-/* TOP TEXT */
-.workflow-top,
-.workflow-bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* gap: 40px; */
-  font-size: 14px;
-  line-height: 1.6;
-  color: #2b2b2b;
+.s3 {
+  border: 3px solid #7aa7ff;
+  font-size: 20px;
+  color: #2f3338;
 }
-
-.workflow-bottom {
-  margin-left: 220px;
-  gap: 40px;
+.s4 {
+  border: 4px solid #7aa7ff;
+  font-size: 20px;
+  color: #2f3338;
 }
-
-.workflow-top {
-  margin-bottom: 30px;
+.s5 {
+  border: 5px solid #7aa7ff;
+  font-size: 20px;
+  color: #2f3338;
 }
-
-/* IMAGE */
-.workflow-image {
-  width: 100%;
-  margin: 30px 0;
-}
-
-.workflow-image img {
-  width: 1580px;
-  margin-left: -210px;
-  /* display: block; */
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .workflow-top,
-  .workflow-bottom {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .workflow-title {
-    text-align: center;
-  }
-}
+.s6 {
+  border: 6px solid #2563eb;
+  font-size: 20px;
+  color: #2f3338;
+} 

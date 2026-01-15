@@ -58,6 +58,15 @@
   color: white;
   font-weight: lighter;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.t > button:hover {
+  background-color: white;
+  color: #175ce5;
+  padding: 11px 31px;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
 .nicheSection {
@@ -71,6 +80,16 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px; */
+}
+
+.t > p {
+  transition: all 0.4s ease;
+}
+
+.t > p:hover {
+  font-size: 18px;
+  color: #175ce5;
+  cursor: pointer;
 }
 
 .nicheSectionl:hover {

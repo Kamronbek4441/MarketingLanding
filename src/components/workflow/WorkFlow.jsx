@@ -3,64 +3,63 @@ import "./WorkFlow.css";
 
 const Workflow = () => {
   return (
-    <section className="workflow">
-      <div className="workflow-container">
-        <h2 className="workflow-title">Как мы работаем?</h2>
-
-        {/* TOP TEXT */}
-        <div className="workflow-top">
-          <div>
+    <div className="workf">
+      <h1>Как мы работаем?</h1>
+      <div className="wrokflow">
+        <div className="work1">
+          <div className="work">
             <p>
-              Изучаем структуру вашего <br /> бизнеса и анализируем <br />
-              ваше положение на рынке.
+              Изучаем структуру вашего бизнеса и анализируем ваше положение на
+              рынке.
             </p>
           </div>
-          <div>
-            <p>
-              Внедряем CRM-систему <br /> и аналитику
-              для учета <br /> продаж и прибыли.
-            </p>
+          <div className="work">
+            <p>Внедряем CRM-систему и аналитику для учета продаж и прибыли.</p>
           </div>
-          <div className="d3">
+          <div className="work">
             <p>
-              Настраиваем рекламу в подходящих <br />
-              рекламных каналах. Контролируем <br />
+              Настраиваем рекламу в подходящих рекламных каналах. Контролируем
               бюджеты и окупаемость вложений.
             </p>
           </div>
         </div>
+        <div className="work2">
+          {/* TIMELINE IMAGE */}
+          <div class="steps-wrap">
+            <div class="line full"></div>
 
-        {/* TIMELINE IMAGE */}
-        <div className="workflow-image">
-          <img src="/assets/numbers.jpg" alt="workflow timeline" />
+            <div class="steps">
+              <div class="step s1">01</div>
+              <div class="step s2">02</div>
+              <div class="step s3">03</div>
+              <div class="step s4">04</div>
+              <div class="step s5">05</div>
+              <div class="step s6">06</div>
+            </div>
+          </div>
         </div>
-
-        {/* BOTTOM TEXT */}
-        <div className="workflow-bottom">
-          <div>
+        <div className="work3">
+          <div className="flow">
             <p>
-              Устанавливаем цели и точки <br />
-              роста бизнеса. Готовим пошаговый <br />
-              план по их достижению.
+              Устанавливаем цели и точки роста бизнеса. Готовим пошаговый план
+              по их достижению.
             </p>
           </div>
-          <div>
+          <div className="flow">
             <p>
-              Готовим к работе ваши <br /> страницы —
-              сайты и профили <br /> в социальных сетях.
+              Готовим к работе ваши страницы – сайт и профили в социальных
+              сетях.
             </p>
           </div>
-          <div>
+          <div className="flow">
             <p>
-              Ежемесячно ставим цели <br />
-              по прибыли и количеству <br />
-              клиентов и отчитываемся <br />
-              за их выполнение.
+              Ежемесячно ставим цель по прибыли и количеству клиентов и
+              отчитываемся за ее выполнение.
             </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
