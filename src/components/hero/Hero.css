@@ -1,6 +1,6 @@
 .herosection {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 60px 520px 80px 120px;
   max-height: 100vh;
@@ -12,6 +12,9 @@
   justify-content: center;
   flex-direction: column;
   gap: 35px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .hero > h3 {
@@ -23,7 +26,7 @@
 .hero > h1 {
   font-size: 64px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hero > h2 {
@@ -33,7 +36,7 @@
 }
 
 .hero > .imgtext5 {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -62,17 +65,28 @@
 .btntext > button {
   padding: 20px 85px;
   font-size: 18px;
-  background: #175CE5;
+  background: #175ce5;
   color: white;
   border: none;
   transition: all 0.4s ease;
 }
 
 .btntext > button:hover {
-  padding: 21px 90px;
-  font-size: 19px;
+  /* padding: 21px 90px; */
+  /* font-size: 19px; */
   cursor: pointer;
   background-color: white;
-  color: #175CE5;
+  color: #175ce5;
   border-radius: 5px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

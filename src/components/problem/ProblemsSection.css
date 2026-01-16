@@ -1,7 +1,7 @@
 .problemsection {
   display: flex;
-  align-items: flex-start;
-  /* justify-content: center;  */
+  /* align-items: center; */
+  justify-content: center; 
   padding: 40px 120px;
   gap: 250px;
 }
@@ -19,6 +19,9 @@
   color: #175CE5;
   font-size: 32px;
   font-weight: lighter;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .problem > .textarrow {
@@ -26,6 +29,9 @@
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .textarrow > p {
@@ -35,4 +41,15 @@
 
 .textarrow > img {
   height: 75px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

@@ -1,6 +1,139 @@
 .portfolio {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.portfolio > h1 {
+  margin-left: -970px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.over-port {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+/* Portlar konteyneri */
+.port-wrapper {
+  overflow: hidden;
+  width: 1300px; /* 4 ta port ko‘rinishi uchun */
+  gap: 120px;
+}
+
+.port-track {
+  display: flex;
+  gap: 30px;
+}
+
+/* Slide effekt */
+.port-track.sliding.next {
+  transform: translateX(-250px); /* port width + gap */
+  transition: transform 0.5s ease;
+}
+
+.port-track.sliding.prev {
+  transform: translateX(250px);
+  transition: transform 0.5s ease;
+}
+
+/* Port divlar */
+.port {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 20px;
+  min-width: 230px; /* har bir port width */
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); */
+  transition: all 0.4s ease;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
+}
+
+.port:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.port > .port-menu-img {
+  height: 28px;
+  cursor: pointer;
+}
+
+.port > button {
+  padding: 8px 25px;
+  border-radius: 10px;
+  color: #2873c8;
+  border: 2px solid #2873c8;
+  background: white;
+  transition: all 0.4s ease;
+}
+
+.port > button:hover {
+  background-color: #2873c8;
+  color: white;
+  cursor: pointer;
+}
+
+.port > h3 {
+  font-size: 15px;
+  font-weight: lighter;
+  color: #1a2233;
+  margin-bottom: 15px;
+}
+
+/* Animatsiya */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .port-wrapper {
+    width: 800px; /* 3 port */
+  }
+}
+
+@media (max-width: 900px) {
+  .port-wrapper {
+    width: 500px; /* 2 port */
+  }
+}
+
+@media (max-width: 600px) {
+  .port-wrapper {
+    width: 250px; /* 1 port */
+  }
+}
+
+/* 
+
+.portfolio {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 40px;
@@ -8,7 +141,10 @@
 }
 
 .portfolio > h1 {
-  margin-left: 80px;
+  margin-left: -970px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .over-port {
@@ -16,6 +152,12 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+.over-port > img {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
 }
 
 .port {
@@ -28,6 +170,9 @@
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
   transition: all 0.4s ease;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
 }
 
 .port:hover {
@@ -60,3 +205,14 @@
   color: #1A2233;
   margin-bottom: 15px;
 }
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+} */

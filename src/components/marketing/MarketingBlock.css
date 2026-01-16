@@ -9,6 +9,9 @@
   padding: 0 120px;
   gap: 220px;
   max-height: 250px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
 }
 
 .market {
@@ -22,4 +25,16 @@
   font-size: 15px;
   color: #2F3338;
   line-height: 30px;
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
