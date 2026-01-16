@@ -36,7 +36,6 @@ const CaseSection = () => {
             <p>Сумма заказов</p>
           </div>
           <div className="case5">
-            <h3></h3>
             <p>1 480 000 руб</p>
             <p>43 370</p>
             <p>800</p>
