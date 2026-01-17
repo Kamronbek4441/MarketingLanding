@@ -30,19 +30,19 @@
 /* Portlar konteyneri */
 .port-wrapper {
   overflow: hidden;
-  width: 1300px; /* 4 ta port ko‘rinishi uchun */
-  gap: 120px;
+  width: 1200px; /* 4 ta port ko‘rinishi uchun */
+  gap: 100px;
 }
 
 .port-track {
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
 
 /* Slide effekt */
 .port-track.sliding.next {
-  transform: translateX(-250px); /* port width + gap */
-  transition: transform 0.5s ease;
+  transform: translateX(-311px); /* port width + gap */
+  transition: transform 0.8s ease;
 }
 
 .port-track.sliding.prev {
@@ -52,6 +52,7 @@
 
 /* Port divlar */
 .port {
+  margin-left: 35px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -69,6 +70,10 @@
 
 .port:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.port-img {
+  height: 120px;
 }
 
 .port > .port-menu-img {

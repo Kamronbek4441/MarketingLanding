@@ -33,7 +33,7 @@
   border-bottom: 8px solid #175ce5;
   max-height: 320px;
   min-height: 320px;
-  max-width: 450px;
+  max-width: 430px;
   transition: all 0.5s ease;
   animation: appear linear;
   animation-timeline: view();
