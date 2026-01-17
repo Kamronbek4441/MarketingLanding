@@ -138,3 +138,17 @@
     transform: translateX(0px);
   }
 }
+
+@media (min-width: 1920px) {
+  .workf {
+    padding: 40px 630px;
+    /* max-width: 900px;/ */
+    /* margin: 0 auto; */
+  }
+  .work1 {
+    gap: 220px;
+  }
+  .work3 {
+    gap: 190px;
+  }
+}
