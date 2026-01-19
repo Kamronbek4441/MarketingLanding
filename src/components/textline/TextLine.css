@@ -1,4 +1,95 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* WRAPPER */
 .text-line-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 60px 50px 120px;
+
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
+}
+
+/* TEXT */
+.text-line {
+  font-size: 30px;
+  font-weight: 500;
+  color: #1a2233;
+  line-height: 1.4;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* ANIMATION */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* LARGE LAPTOP */
+@media (max-width: 1200px) {
+  .text-line-wrapper {
+    padding: 50px 40px 40px 80px;
+  }
+
+  .text-line {
+    font-size: 28px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .text-line-wrapper {
+    padding: 40px 30px 30px 40px;
+  }
+
+  .text-line {
+    font-size: 26px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .text-line-wrapper {
+    padding: 30px 20px 25px 20px;
+  }
+
+  .text-line {
+    font-size: 22px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .text-line {
+    font-size: 20px;
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 360px) {
+  .text-line {
+    font-size: 18px;
+  }
+}
+
+
+/* .text-line-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -22,4 +113,4 @@
     opacity: 1;
     transform: translateX(0px);
   }
-}
+} */

@@ -1,6 +1,171 @@
+/* SECTION */
 .problemsection {
   display: flex;
-  /* align-items: center; */
+  justify-content: center;
+  padding: 40px 140px;
+  gap: 250px;
+  background: #ffffff;
+}
+
+/* COLUMN */
+.problem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 540px;
+}
+
+/* TITLE */
+.problem h1 {
+  color: #175ce5;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.3;
+
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+/* ITEM */
+.textarrow {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+/* ICON */
+.textarrow img {
+  height: 75px;
+  flex-shrink: 0;
+}
+
+/* TEXT */
+.textarrow p {
+  color: #1a2233;
+  font-size: 18px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* ANIMATION */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* LARGE LAPTOP */
+@media (max-width: 1200px) {
+  .problemsection {
+    padding: 40px 80px;
+    gap: 120px;
+  }
+
+  .problem h1 {
+    font-size: 28px;
+  }
+
+  .textarrow p {
+    font-size: 17px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .problemsection {
+    padding: 40px 60px;
+    gap: 80px;
+  }
+
+  .problem {
+    gap: 30px;
+  }
+
+  .problem h1 {
+    font-size: 26px;
+  }
+
+  .textarrow img {
+    height: 60px;
+  }
+
+  .textarrow p {
+    font-size: 16px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .problemsection {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 60px;
+  }
+
+  .problem {
+    max-width: 100%;
+    gap: 25px;
+  }
+
+  .problem h1 {
+    font-size: 24px;
+  }
+
+  .textarrow {
+    gap: 15px;
+  }
+
+  .textarrow img {
+    height: 50px;
+  }
+
+  .textarrow p {
+    font-size: 16px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .problem h1 {
+    font-size: 22px;
+  }
+
+  .textarrow img {
+    height: 42px;
+  }
+
+  .textarrow p {
+    font-size: 15px;
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 360px) {
+  .problem h1 {
+    font-size: 20px;
+  }
+
+  .textarrow p {
+    font-size: 14px;
+  }
+}
+
+
+/* .problemsection {
+  display: flex;
   justify-content: center; 
   padding: 40px 140px;
   gap: 250px;
@@ -52,4 +217,4 @@
     opacity: 1;
     transform: translateX(0px);
   }
-}
+} */

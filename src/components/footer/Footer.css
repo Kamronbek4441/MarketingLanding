@@ -1,5 +1,129 @@
 .footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 120px 120px;
+  background-color: #f5f6fc;
+}
+
+.footer > h1 {
+  color: #2f3338;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+  border-bottom: 8px solid #175ce5;
+  max-width: 420px;
+  min-height: 320px;
+  transition: all 0.5s ease;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+
+.foot:hover {
+  border-bottom: 20px solid #175ce5;
+}
+
+.foot > img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.foot > h2 {
+  color: #2873c8;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.foot > p {
+  color: #1a2233;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ================= KEYFRAME ANIMATION ================= */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .footer > h1 {
+    font-size: 30px;
+  }
+  .footer-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .foot {
+    min-height: auto;
+    padding: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer > h1 {
+    font-size: 24px;
+  }
+  .footer {
+    padding: 40px 20px 60px;
+    gap: 30px;
+  }
+  .footer-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .foot {
+    padding: 15px;
+    max-height: 235px;
+    min-height: 235px;
+  }
+  .foot > h2 {
+    font-size: 18px;
+  }
+  .foot > p {
+    font-size: 14px;
+  }
+}
+
+
+/* .footer {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -46,7 +170,6 @@
 
 .foot > h2 {
   color: #2873c8;
-  /* font-size: large; */
 }
 
 .foot > p {
@@ -132,4 +255,4 @@
   .reasons-grid {
     grid-template-columns: 1fr;
   }
-} */
+} */ 
