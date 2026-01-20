@@ -116,13 +116,16 @@
 
 /* SMALL MOBILE */
 @media (max-width: 480px) {
+  .market {
+    padding: 20px ;
+  }
   .market p {
     font-size: 14px;
     line-height: 1.6;
   }
 
   .market img {
-    max-width: 100%;
+    max-width: 65%;
   }
 }
 

@@ -215,6 +215,9 @@
   .btntext h3 {
     font-size: 15px;
   }
+    .btntext button  {
+      width: 45%;
+    }
 }
 
 /* EXTRA SMALL DEVICES */
