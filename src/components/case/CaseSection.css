@@ -62,7 +62,24 @@
   max-width: 250px;
 }
 
-.case2 > .case5 {
+.cas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 140px;
+}
+
+.cas > .case {
+  min-width: min-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 250px;
+}
+
+.cas > .case5 {
   min-width: min-content;
   display: flex;
   align-items: flex-start;
@@ -163,6 +180,14 @@
 }
 
 @media (max-width: 600px) {
+  .cas {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .cas > .case5 {
+    margin-top: 80px;
+  }
   .casebody {
     padding: 30px 15px;
   }

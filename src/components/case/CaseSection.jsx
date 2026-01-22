@@ -27,7 +27,8 @@ const CaseSection = () => {
             <p>Настроить стабильный поток заявок через интернет</p>
             <p>Ежемесячно выполнять план по лидам</p>
           </div>
-          <div className="case">
+          <div className="cas">
+            <div className="case">
             <h3>Работа:</h3>
             <p>Рекламный бюджет</p>
             <p>Визиты</p>
@@ -41,6 +42,7 @@ const CaseSection = () => {
             <p>800</p>
             <p>40</p>
             <p>80 000 000 руб</p>
+          </div>
           </div>
         </div>
       </div>
