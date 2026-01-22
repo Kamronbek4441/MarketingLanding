@@ -98,7 +98,7 @@
   background-color: #0631f1;
   color: white;
   cursor: pointer;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
 }
 
@@ -117,3 +117,114 @@
     transform: translateX(0px);
   }
 }
+
+@media (max-width: 1200px) {
+  .casebody {
+    padding: 40px 40px;
+  }
+
+  .case1 {
+    gap: 200px;
+  }
+
+  .caseover > h2 {
+    font-size: 34px;
+  }
+
+  .case2 {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 900px) {
+  .caseSection {
+    padding: 30px;
+  }
+
+  .case1 {
+    gap: 80px;
+    align-items: center;
+  }
+
+  .caseover > h2 {
+    font-size: 30px;
+  }
+
+  .case2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .case2 > .case,
+  .case2 > .case5 {
+    max-width: 45%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .casebody {
+    padding: 30px 15px;
+  }
+
+  .caseSection {
+    padding: 25px 20px;
+  }
+
+  .case1 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .caseover > h2 {
+    font-size: 26px;
+  }
+
+  .case2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .case2 > .case,
+  .case2 > .case5 {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .case > h2,
+  .case > h3 {
+    font-size: 20px;
+  }
+
+  .case > p {
+    font-size: 16px;
+  }
+
+  .case > button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .caseover > h2 {
+    font-size: 22px;
+  }
+
+  .case > h2,
+  .case > h3 {
+    font-size: 18px;
+  }
+
+  .case > p {
+    font-size: 15px;
+  }
+
+  .case > button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
+

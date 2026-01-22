@@ -78,53 +78,59 @@
 @media (max-width: 992px) {
   .zoomsection {
     flex-direction: column;
-    align-items: center;
-    gap: 70px;
+    align-items: stretch;
+    gap: 60px;
+    padding: 40px 20px;
   }
 
   .zoom {
-    max-width: 90%;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 100%;
   }
 
-  .textnumber {
-    flex-direction: column;
-    align-items: center;
+  /* icon + text yonma-yon qoladi */
+  .zoom > .textnumber {
+    flex-direction: row;
+    align-items: flex-start;
     gap: 15px;
+    max-width: 100%;
   }
 
   .textnumber img {
-    height: 40px;
-  }
-
-  .zoom > img {
-    height: 100px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .zoom > h1 {
-    font-size: 26px;
-  }
-
-  .zoom > h3 {
-    font-size: 18px;
+    height: 36px;
+    flex-shrink: 0;
   }
 
   .textnumber p {
     font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .zoom > img {
+    height: 90px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .zoom > h1 {
+    font-size: 24px;
+  }
+
+  .zoom > h3 {
+    font-size: 17px;
+    margin-bottom: 25px;
   }
 
   .zoom > button {
-    font-size: 17px;
-    padding: 15px 30px;
-  }
-  .zoom > img {
-    height: 80px;
+    font-size: 16px;
+    padding: 14px 30px;
   }
 }
+
 
 /* Small Mobile */
 @media (max-width: 480px) {
@@ -133,7 +139,7 @@
   }
 
   .zoom > h3 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .textnumber p {
@@ -141,11 +147,12 @@
   }
 
   .zoom > button {
-    font-size: 13px;
-    padding: 15px 25px;
+    width: 100%;
+    font-size: 14px;
+    padding: 14px 20px;
   }
 
   .zoom > img {
-    height: 50px;
+    height: 70px;
   }
 }
